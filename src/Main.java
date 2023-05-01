@@ -1,6 +1,9 @@
+import java.io.InputStream;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
+        
         tasc1();
         tasc2();
         tasc3();
@@ -8,6 +11,9 @@ public class Main {
         tasc5();
         tasc6();
         tasc7();
+        tasc8();
+        tasc9();
+        tasc10();
     }
 
     public static void tasc1() {
@@ -70,6 +76,40 @@ public class Main {
 
         for (int n = 1; n < 512; n = n * 2){
             System.out.print("Числа: " + n + " ");
+        }
+    }
+    public static void tasc8() {
+        System.out.println("Задача 8");
+
+        int salary = 29_000;
+        int total = 0;
+        for (int i = 0; i < 12; i++) {
+            total = total + salary;
+            System.out.println("Месяц " + i + ", сумма накоплений равна "+ total +" рублей!");
+        }
+        System.out.println(total);
+    }
+    public static void tasc9() {
+        System.out.println("Задача 9");
+
+        int salary = 29_000;
+        int total = 0;
+        for (int i = 0; i < 12; i++) {
+            total = total + total/100;
+            total = total + salary;
+            System.out.println("Месяц " + i + ", сумма накоплений равна "+ total +" рублей!");
+        }
+        System.out.println(total);
+    }
+    public static void tasc10() {
+        System.out.println("Задача 10");
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Ведите число: ");
+        int number = in.nextInt();
+        for (int j = 0; j < 10; j++) {
+            System.out.println(number + " x " + (j + 1) + " = " + (number * (j+1)));
         }
     }
 }
