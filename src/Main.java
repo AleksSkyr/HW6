@@ -104,12 +104,16 @@ public class Main {
     public static void tasc10() {
         System.out.println("Задача 10");
 
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("Ведите число: ");
-        int number = in.nextInt();
-        for (int j = 0; j < 10; j++) {
-            System.out.println(number + " x " + (j + 1) + " = " + (number * (j+1)));
+//        Scanner in = new Scanner(System.in);
+//
+//        System.out.println("Ведите число: ");
+//        int number = in.nextInt();
+//        for (int j = 0; j < 10; j++) {
+//            System.out.println(number + " x " + (j + 1) + " = " + (number * (j+1)));
+//        }
+        int f = 2;
+        for (int d = 0; d < 10; d++) {
+            System.out.println(f + " x " + (d + 1) + " = " + (f * (d+1)));
         }
     }
 }
